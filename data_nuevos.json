@@ -1,0 +1,244 @@
+{
+  "categorias": [
+    {
+      "id": 2,
+      "nombre": "Burgas Especiales",
+      "descripcion": "Hamburguesas con ingredientes premium y recetas especiales de la casa",
+      "parent_id": 1,
+      "created_at": "2026-05-14T12:00:00.000000",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 3,
+      "nombre": "Acompañamientos",
+      "descripcion": "Papas fritas, ensaladas y guarniciones para acompañar tu pedido",
+      "parent_id": null,
+      "created_at": "2026-05-14T12:01:00.000000",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 4,
+      "nombre": "Bebidas",
+      "descripcion": "Gaseosas, jugos y agua",
+      "parent_id": null,
+      "created_at": "2026-05-14T12:02:00.000000",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 5,
+      "nombre": "Postres",
+      "descripcion": "Helados, tortas y opciones dulces para cerrar el pedido",
+      "parent_id": null,
+      "created_at": "2026-05-14T12:03:00.000000",
+      "updated_at": null,
+      "deleted_at": null
+    }
+  ],
+  "ingredientes": [
+    {
+      "id": 12,
+      "nombre": "Papas fritas porción normal",
+      "descripcion": "Porción de papas fritas medianas (200g aprox)",
+      "unidad_medida": "g",
+      "es_alergeno": false,
+      "created_at": "2026-05-14T12:10:00.000000",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 13,
+      "nombre": "Papas fritas porción grande",
+      "descripcion": "Porción grande de papas fritas (350g aprox)",
+      "unidad_medida": "g",
+      "es_alergeno": false,
+      "created_at": "2026-05-14T12:11:00.000000",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 14,
+      "nombre": "Salsa BBQ",
+      "descripcion": "Salsa BBQ ahumada (10-15g)",
+      "unidad_medida": "g",
+      "es_alergeno": false,
+      "created_at": "2026-05-14T12:12:00.000000",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 15,
+      "nombre": "Jalapeños en rodajas",
+      "descripcion": "Jalapeños encurtidos cortados en rodajas",
+      "unidad_medida": "unidad",
+      "es_alergeno": false,
+      "created_at": "2026-05-14T12:13:00.000000",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 16,
+      "nombre": "Huevo frito",
+      "descripcion": "Huevo frito en aceite de girasol",
+      "unidad_medida": "unidad",
+      "es_alergeno": true,
+      "created_at": "2026-05-14T12:14:00.000000",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 17,
+      "nombre": "Champiñones salteados",
+      "descripcion": "Champiñones salteados con ajo y manteca (50g aprox)",
+      "unidad_medida": "g",
+      "es_alergeno": false,
+      "created_at": "2026-05-14T12:15:00.000000",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 18,
+      "nombre": "Pan de semillas",
+      "descripcion": "Pan artesanal con semillas de sésamo y lino",
+      "unidad_medida": "unidad",
+      "es_alergeno": true,
+      "created_at": "2026-05-14T12:16:00.000000",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 19,
+      "nombre": "Coca-Cola 500ml",
+      "descripcion": "Botella de Coca-Cola 500ml",
+      "unidad_medida": "unidad",
+      "es_alergeno": false,
+      "created_at": "2026-05-14T12:17:00.000000",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 20,
+      "nombre": "Agua mineral 500ml",
+      "descripcion": "Botella de agua mineral sin gas 500ml",
+      "unidad_medida": "unidad",
+      "es_alergeno": false,
+      "created_at": "2026-05-14T12:18:00.000000",
+      "updated_at": null,
+      "deleted_at": null
+    }
+  ],
+  "productos": [
+    {
+      "id": 3,
+      "nombre": "Burger BBQ",
+      "descripcion": "Medallón 150g, pan brioche, bacon, cheddar y salsa BBQ ahumada.",
+      "precio": 12500.0,
+      "stock_cantidad": 0,
+      "disponible": true,
+      "created_at": "2026-05-14T12:20:00.000000",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 4,
+      "nombre": "Burger Jalapeño",
+      "descripcion": "Medallón 200g, pan brioche, queso cheddar fundido, jalapeños y salsa cheddar. Para los que les gusta el picante.",
+      "precio": 13500.0,
+      "stock_cantidad": 0,
+      "disponible": true,
+      "created_at": "2026-05-14T12:21:00.000000",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 5,
+      "nombre": "Burger Huevo y Champiñones",
+      "descripcion": "Medallón 150g, pan de semillas, huevo frito, champiñones salteados y mayonesa.",
+      "precio": 13000.0,
+      "stock_cantidad": 0,
+      "disponible": true,
+      "created_at": "2026-05-14T12:22:00.000000",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 6,
+      "nombre": "Papas Fritas Normales",
+      "descripcion": "Porción normal de papas fritas crocantes (200g aprox).",
+      "precio": 4500.0,
+      "stock_cantidad": 0,
+      "disponible": true,
+      "created_at": "2026-05-14T12:23:00.000000",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 7,
+      "nombre": "Papas Fritas Grandes",
+      "descripcion": "Porción grande de papas fritas crocantes (350g aprox).",
+      "precio": 6000.0,
+      "stock_cantidad": 0,
+      "disponible": true,
+      "created_at": "2026-05-14T12:24:00.000000",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 8,
+      "nombre": "Coca-Cola",
+      "descripcion": "Coca-Cola 500ml bien fría.",
+      "precio": 2500.0,
+      "stock_cantidad": 0,
+      "disponible": true,
+      "created_at": "2026-05-14T12:25:00.000000",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 9,
+      "nombre": "Agua Mineral",
+      "descripcion": "Agua mineral sin gas 500ml.",
+      "precio": 1500.0,
+      "stock_cantidad": 0,
+      "disponible": true,
+      "created_at": "2026-05-14T12:26:00.000000",
+      "updated_at": null,
+      "deleted_at": null
+    }
+  ],
+  "producto_categoria": [
+    { "producto_id": 3, "categoria_id": 1 },
+    { "producto_id": 3, "categoria_id": 2 },
+    { "producto_id": 4, "categoria_id": 1 },
+    { "producto_id": 4, "categoria_id": 2 },
+    { "producto_id": 5, "categoria_id": 1 },
+    { "producto_id": 5, "categoria_id": 2 },
+    { "producto_id": 6, "categoria_id": 3 },
+    { "producto_id": 7, "categoria_id": 3 },
+    { "producto_id": 8, "categoria_id": 4 },
+    { "producto_id": 9, "categoria_id": 4 }
+  ],
+  "producto_ingrediente": [
+    { "producto_id": 3, "ingrediente_id": 5,  "cantidad": 2.0, "es_removible": true  },
+    { "producto_id": 3, "ingrediente_id": 1,  "cantidad": 1.0, "es_removible": false },
+    { "producto_id": 3, "ingrediente_id": 10, "cantidad": 2.0, "es_removible": true  },
+    { "producto_id": 3, "ingrediente_id": 6,  "cantidad": 1.0, "es_removible": true  },
+    { "producto_id": 3, "ingrediente_id": 14, "cantidad": 15.0,"es_removible": true  },
+    { "producto_id": 4, "ingrediente_id": 5,  "cantidad": 2.0, "es_removible": true  },
+    { "producto_id": 4, "ingrediente_id": 11, "cantidad": 1.0, "es_removible": false },
+    { "producto_id": 4, "ingrediente_id": 6,  "cantidad": 1.0, "es_removible": true  },
+    { "producto_id": 4, "ingrediente_id": 15, "cantidad": 5.0, "es_removible": true  },
+    { "producto_id": 4, "ingrediente_id": 9,  "cantidad": 20.0,"es_removible": true  },
+    { "producto_id": 5, "ingrediente_id": 18, "cantidad": 2.0, "es_removible": true  },
+    { "producto_id": 5, "ingrediente_id": 1,  "cantidad": 1.0, "es_removible": false },
+    { "producto_id": 5, "ingrediente_id": 16, "cantidad": 1.0, "es_removible": true  },
+    { "producto_id": 5, "ingrediente_id": 17, "cantidad": 50.0,"es_removible": true  },
+    { "producto_id": 5, "ingrediente_id": 8,  "cantidad": 15.0,"es_removible": true  },
+    { "producto_id": 6, "ingrediente_id": 12, "cantidad": 200.0,"es_removible": false},
+    { "producto_id": 7, "ingrediente_id": 13, "cantidad": 350.0,"es_removible": false},
+    { "producto_id": 8, "ingrediente_id": 19, "cantidad": 1.0, "es_removible": false },
+    { "producto_id": 9, "ingrediente_id": 20, "cantidad": 1.0, "es_removible": false }
+  ]
+}
