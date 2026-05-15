@@ -1,9 +1,15 @@
 @echo off
 echo Importando datos a la base de datos...
-echo (La DB y las tablas ya deben existir - corre run.bat primero si no lo hiciste)
 echo.
 cd backend
-call .venv\Scripts\activate.bat
+echo [INFO] Aplicando migraciones (creando tablas si no existen)...
+alembic upgrade head
+if errorlevel 1 (
+    echo ERROR: Fallo alembic upgrade head. Verifica que PostgreSQL este corriendo.
+    pause
+    exit /b 1
+)
+echo.
 python import_data.py
 if errorlevel 1 (
     echo ERROR: Fallo la importacion.

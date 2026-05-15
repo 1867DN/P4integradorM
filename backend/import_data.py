@@ -19,13 +19,13 @@ def insert_rows(session: Session, table: str, rows: list[dict], pk: str = "id"):
     for row in rows:
         cols = ", ".join(row.keys())
         placeholders = ", ".join(f":{k}" for k in row.keys())
-        session.exec(
+        session.execute(
             text(f"INSERT INTO {table} ({cols}) VALUES ({placeholders}) ON CONFLICT DO NOTHING"),
             row,
         )
 
     max_id = max(r[pk] for r in rows)
-    session.exec(text(f"SELECT setval(pg_get_serial_sequence('{table}', '{pk}'), {max_id})"))
+    session.execute(text(f"SELECT setval(pg_get_serial_sequence('{table}', '{pk}'), {max_id})"))
     print(f"  {table}: {len(rows)} filas insertadas.")
 
 
@@ -37,7 +37,7 @@ def insert_pivot(session: Session, table: str, rows: list[dict]):
     for row in rows:
         cols = ", ".join(row.keys())
         placeholders = ", ".join(f":{k}" for k in row.keys())
-        session.exec(
+        session.execute(
             text(f"INSERT INTO {table} ({cols}) VALUES ({placeholders}) ON CONFLICT DO NOTHING"),
             row,
         )
@@ -61,7 +61,7 @@ def insert_categorias_ordered(session: Session, rows: list[dict]):
             if parent is None or parent in inserted_ids:
                 cols = ", ".join(row.keys())
                 placeholders = ", ".join(f":{k}" for k in row.keys())
-                session.exec(
+                session.execute(
                     text(f"INSERT INTO categoria ({cols}) VALUES ({placeholders}) ON CONFLICT DO NOTHING"),
                     row,
                 )
@@ -74,7 +74,7 @@ def insert_categorias_ordered(session: Session, rows: list[dict]):
         print(f"  ADVERTENCIA: {len(pending)} categorias sin parent encontrado.")
 
     max_id = max(r["id"] for r in rows)
-    session.exec(text(f"SELECT setval(pg_get_serial_sequence('categoria', 'id'), {max_id})"))
+    session.execute(text(f"SELECT setval(pg_get_serial_sequence('categoria', 'id'), {max_id})"))
     print(f"  categoria: {len(rows) - len(pending)} filas insertadas.")
 
 

@@ -33,19 +33,13 @@ if not exist "%ROOT%backend\.env" (
 
 REM -- 2. Instalar dependencias Python --
 echo [INFO] Verificando dependencias Python...
-python -c "import fastapi" >nul 2>&1
+pip install -r "%ROOT%backend\requirements.txt" --quiet
 if errorlevel 1 (
-    echo [INFO] Instalando dependencias Python...
-    pip install -r "%ROOT%backend\requirements.txt"
-    if errorlevel 1 (
-        echo [ERROR] Fallo la instalacion de dependencias Python.
-        pause
-        exit /b 1
-    )
-    echo [OK] Dependencias Python instaladas.
-) else (
-    echo [OK] Dependencias Python ya instaladas.
+    echo [ERROR] Fallo la instalacion de dependencias Python.
+    pause
+    exit /b 1
 )
+echo [OK] Dependencias Python ya instaladas.
 
 REM -- 3. Instalar dependencias Node --
 if not exist "%ROOT%frontend\node_modules" (
