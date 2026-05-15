@@ -8,7 +8,7 @@ from pathlib import Path
 from sqlmodel import Session, text
 from app.core.database import engine
 
-INPUT = Path(__file__).parent / "data_export.json"
+INPUT = Path(__file__).parent.parent / "data_export.json"
 
 
 def insert_rows(session: Session, table: str, rows: list[dict], pk: str = "id"):

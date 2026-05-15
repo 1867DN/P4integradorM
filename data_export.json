@@ -1,0 +1,233 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nombre": "Burgas",
+      "descripcion": "Hamburguesas caseras",
+      "parent_id": null,
+      "created_at": "2026-05-14T23:39:00.475696",
+      "updated_at": "2026-05-14T23:39:12.420724",
+      "deleted_at": null
+    }
+  ],
+  "ingredientes": [
+    {
+      "id": 1,
+      "nombre": "Medallon de carne normal 150g",
+      "descripcion": "Medallón de carne tamaño normal, peso de 150g.",
+      "unidad_medida": "unidad",
+      "es_alergeno": false,
+      "created_at": "2026-05-14T23:40:52.006491",
+      "updated_at": "2026-05-14T23:57:25.391950",
+      "deleted_at": null
+    },
+    {
+      "id": 2,
+      "nombre": "Hojas de lechuga",
+      "descripcion": "",
+      "unidad_medida": "unidad",
+      "es_alergeno": false,
+      "created_at": "2026-05-14T23:42:27.906495",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 3,
+      "nombre": "Aros de cebolla",
+      "descripcion": "",
+      "unidad_medida": "unidad",
+      "es_alergeno": false,
+      "created_at": "2026-05-14T23:44:21.049696",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 4,
+      "nombre": "Rodaja de tomate",
+      "descripcion": "",
+      "unidad_medida": "unidad",
+      "es_alergeno": false,
+      "created_at": "2026-05-14T23:44:43.297984",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 5,
+      "nombre": "Pan brioche",
+      "descripcion": "",
+      "unidad_medida": "unidad",
+      "es_alergeno": false,
+      "created_at": "2026-05-14T23:45:18.313084",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 6,
+      "nombre": "Feta de queso cheddar",
+      "descripcion": "Fetas de queso cheddar (20-25g)",
+      "unidad_medida": "unidad",
+      "es_alergeno": false,
+      "created_at": "2026-05-14T23:46:02.021027",
+      "updated_at": "2026-05-14T23:47:48.417719",
+      "deleted_at": null
+    },
+    {
+      "id": 7,
+      "nombre": "Salsa Ketchup",
+      "descripcion": "Aderezos adicionales (10-15g)",
+      "unidad_medida": "g",
+      "es_alergeno": false,
+      "created_at": "2026-05-14T23:46:33.773229",
+      "updated_at": "2026-05-14T23:50:19.391492",
+      "deleted_at": null
+    },
+    {
+      "id": 8,
+      "nombre": "Salsa Mayonesa",
+      "descripcion": "Aderezos adicionales (10-15g)",
+      "unidad_medida": "g",
+      "es_alergeno": false,
+      "created_at": "2026-05-14T23:46:39.713226",
+      "updated_at": "2026-05-14T23:50:21.852866",
+      "deleted_at": null
+    },
+    {
+      "id": 9,
+      "nombre": "Salsa Cheddar",
+      "descripcion": "Aderezos adicionales (10-15g)",
+      "unidad_medida": "g",
+      "es_alergeno": false,
+      "created_at": "2026-05-14T23:48:25.864599",
+      "updated_at": "2026-05-14T23:50:23.958007",
+      "deleted_at": null
+    },
+    {
+      "id": 10,
+      "nombre": "Bacon",
+      "descripcion": "Tiras de Bacon (15-18g cada tira)",
+      "unidad_medida": "unidad",
+      "es_alergeno": false,
+      "created_at": "2026-05-14T23:54:30.131203",
+      "updated_at": null,
+      "deleted_at": null
+    },
+    {
+      "id": 11,
+      "nombre": "Medallon de carne grande 200g",
+      "descripcion": "Medallón de carne tamaño normal, peso de 150g.",
+      "unidad_medida": "unidad",
+      "es_alergeno": false,
+      "created_at": "2026-05-14T23:57:40.704905",
+      "updated_at": null,
+      "deleted_at": null
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Hamburguesa Clásica pequeña",
+      "descripcion": "Burga artesanal clásica de tamaño pequeño.",
+      "precio": 7000.0,
+      "stock_cantidad": 0,
+      "disponible": true,
+      "created_at": "2026-05-15T00:32:53.758265",
+      "updated_at": "2026-05-15T00:35:42.887209",
+      "deleted_at": null
+    },
+    {
+      "id": 2,
+      "nombre": "Hamburguesa Completa grande",
+      "descripcion": "Burga Completa artesanal de tamaño grande.",
+      "precio": 11000.0,
+      "stock_cantidad": 0,
+      "disponible": true,
+      "created_at": "2026-05-15T00:35:30.316216",
+      "updated_at": null,
+      "deleted_at": null
+    }
+  ],
+  "producto_categoria": [
+    {
+      "producto_id": 1,
+      "categoria_id": 1
+    },
+    {
+      "producto_id": 2,
+      "categoria_id": 1
+    }
+  ],
+  "producto_ingrediente": [
+    {
+      "producto_id": 1,
+      "ingrediente_id": 5,
+      "cantidad": 2.0,
+      "es_removible": true
+    },
+    {
+      "producto_id": 1,
+      "ingrediente_id": 1,
+      "cantidad": 1.0,
+      "es_removible": true
+    },
+    {
+      "producto_id": 1,
+      "ingrediente_id": 6,
+      "cantidad": 1.0,
+      "es_removible": true
+    },
+    {
+      "producto_id": 1,
+      "ingrediente_id": 7,
+      "cantidad": 15.0,
+      "es_removible": true
+    },
+    {
+      "producto_id": 2,
+      "ingrediente_id": 5,
+      "cantidad": 2.0,
+      "es_removible": true
+    },
+    {
+      "producto_id": 2,
+      "ingrediente_id": 11,
+      "cantidad": 1.0,
+      "es_removible": true
+    },
+    {
+      "producto_id": 2,
+      "ingrediente_id": 6,
+      "cantidad": 1.0,
+      "es_removible": true
+    },
+    {
+      "producto_id": 2,
+      "ingrediente_id": 2,
+      "cantidad": 1.0,
+      "es_removible": true
+    },
+    {
+      "producto_id": 2,
+      "ingrediente_id": 4,
+      "cantidad": 2.0,
+      "es_removible": true
+    },
+    {
+      "producto_id": 2,
+      "ingrediente_id": 3,
+      "cantidad": 4.0,
+      "es_removible": true
+    },
+    {
+      "producto_id": 2,
+      "ingrediente_id": 10,
+      "cantidad": 2.0,
+      "es_removible": true
+    },
+    {
+      "producto_id": 2,
+      "ingrediente_id": 7,
+      "cantidad": 20.0,
+      "es_removible": true
+    }
+  ]
+}

@@ -9,7 +9,7 @@ from pathlib import Path
 from sqlmodel import Session, text
 from app.core.database import engine
 
-OUTPUT = Path(__file__).parent / "data_export.json"
+OUTPUT = Path(__file__).parent.parent / "data_export.json"
 
 
 def serialize(value):
